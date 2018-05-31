@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+
+Name: <input type="text" id="myText" value="moshe">
+
+<button onclick="myFunction()">Try it</button>
+<input type="button" onclick="printDiv('printableArea')" value="print a div!" />
+<script>
+function myFunction() {
+    var a=document.getElementById("myText").value;
+    printDiv('printableArea')
+}
+
+c
+v
+</script>
+
+<script>
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+
+</script>
+
+
+
+
+<div id="printableArea">
+      <h1>Print me</h1>
+</div>
+
+
+
+  </body>
+</html>
